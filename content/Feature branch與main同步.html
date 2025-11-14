@@ -142,33 +142,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">啟動動態編輯 << <a href='啟動動態編輯.html'>Previous</a> <a href='合併項目.html'>Next</a> >> 合併項目<br /><h1>Git push</h1>
-<p><span style="background-color: #ffff00;">Git push</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git add .
+    <div id="tipue_search_content">拉取請求(pull request) << <a href='拉取請求(pull request).html'>Previous</a> <a href='維護個人倉儲.html'>Next</a> >> 維護個人倉儲<br /><h1>Feature branch與main同步</h1>
+<p>Feature branch與<span>main</span>同步</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git switch feature/github name
 
-git commit -m “新增成員資訊與W3初步架構”
+git fetch origin
 
-git push origin HEAD:main #使用時請注意HEAD name</pre>
-<p></p>
-<h4><span style="background-color: #ffff00;">force-with-lease</span></h4>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git push origin HEAD:main --force-with-lease</pre>
-<p>#強制更新遠端分支，但比 <span>--force </span>安全</p>
-<ul>
-<li>使用帶有--force、<span>-f</span>等程式需要非常注意</li>
-<li>會先檢查遠端 <span>main </span>是否有你本地不知道的新<span> commit</span></li>
-<li>如果遠端有別人更新過，就拒絕推送</li>
-<li>避免無意間覆蓋他人的修改</li>
-</ul>
+git rebase origin/main</pre>
 <p> </p>
-<p><span style="background-color: #ffff00;">若發生落後多個版次請先暫存</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git add .
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">#ex:
 
-git commit -m "暫存本地修改"
+git switch feature/ruiyi512 # feature/github name
 
-git pull origin main –rebase</pre>
-<p></p>
-<p></p>
-<br />啟動動態編輯 << <a href='啟動動態編輯.html'>Previous</a> <a href='合併項目.html'>Next</a> >> 合併項目</div>
+git fetch origin
+
+git rebase origin/main</pre>
+<p><br/><img alt="" height="361" src="./../images/Feature branch與main同步(1).png" width="800"/></p>
+<br />拉取請求(pull request) << <a href='拉取請求(pull request).html'>Previous</a> <a href='維護個人倉儲.html'>Next</a> >> 維護個人倉儲</div>
         
     <!-- footer -->
       <div class="container">

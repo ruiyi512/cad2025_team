@@ -1,9 +1,17 @@
 # cmsite
 維護成員:41323107、41323142、41323145、41323148、41323150、41136123
 
+github classroom 網站:https://mdecad2025.github.io/2a-ag3/content/index.html
+
+github classroom 倉儲:https://github.com/mdecad2025/2a-ag3
+
 作業網站:https://ruiyi512.github.io/cad2025_team/
 
 作業倉儲:https://github.com/ruiyi512/cad2025_team
+
+41323107個人網站:https://ruiyi512.github.io/feature-ruiyi512/
+
+41323107個人倉儲:https://github.com/ruiyi512/feature-ruiyi512
 
 
 利用 init_replit 指令取下子模組並安裝所需 Python 模組
