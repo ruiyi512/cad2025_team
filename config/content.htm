@@ -128,8 +128,25 @@
 <p><span>王瑞億：組織架構建置及引導。</span></p>
 <p><span>鄭宇哲、蕭日政、<span>熊有為：負責提供確切圖片與檔案。</span></span></p>
 <p><span>楊紹楷</span><span>、黃育驊：補足實際案例不足的理論。</span></p>
-<p>作業目標：<a href="https://cyberbotics.com/">Webots</a><span><span> </span>的模型有沒有辦法用程式方法建立? 有沒有辦法直接從 CAD 套件中轉出<span> </span></span><a href="https://cyberbotics.com/">Webots</a><span><span> </span>的場景模型？</span></p>
-<h3>W17_260102</h3>
+<p>作業目標：<a href="https://cyberbotics.com/">Webots</a><span><span> </span>的模型有沒有辦法用程式方法建立? 有沒有辦法直接從 CAD 套件中轉出<span> </span></span><a href="https://cyberbotics.com/">Webots</a><span><span> </span>的場景模型？<br/></span></p>
+<p><b>Webots 模型的程式化建立理論</b></p>
+<ul>
+<li><span></span><b>VRML 語法基礎</b>：Webots 的場景檔案 (.wbt) 與機器人原型檔案 (.proto) 均基於 <b>VRML</b>規範。這是一種純文字的樹狀結構，因此理論上可以透過 Python 腳本生成字串並寫入檔案，實現程序化建模。</li>
+<li><span></span><b>節點映射機制</b>：程式建立模型的核心在於將幾何參數（如連桿長度 L）映射至節點位移 (translation)，並將轉動關係映射至 JointParameters 節點。</li>
+</ul>
+<p><b><br/> <span class="Apple-converted-space"> </span>補救理論： 論述「幾何模型」與「物理模型」的本質差異。</b></p>
+<p><b>1. B-Rep 與 Mesh 的轉換理論 (幾何核心)</b></p>
+<ul>
+<li><span></span><b>理論論述</b>：CAD (如 NX) 使用 <b>B-Rep (Boundary Representation)</b> 來數學定義精確曲面；但 Webots 模擬器為了即時渲染與碰撞運算，必須將其離散化為 <b>Mesh (網格/多邊形)</b>。</li>
+<li><span></span><b>關鍵觀念</b>：從 NX 到 Webots 的過 程，本質上是一次 <b>Tessellation (鑲嵌化)</b>。若網格過密，模擬幀率 (FPS) 會下降；若過疏，碰撞偵測 (Collision Detection) 會失真。</li>
+<li><span></span><b>文獻/技術關鍵字</b>：NURBS to Polygon Conversion, Level of Detail (LOD).</li>
+</ul>
+<p><b>2. URDF 描述格式標準 (結構核心)</b></p>
+<ul>
+<li><span></span><b>理論論述</b>：現代機器人模擬不依賴單純的圖檔，而是依賴 <b>URDF (Unified Robot Description Format)</b>。這是一種基於 XML 的樹狀結構標準。</li>
+</ul>
+<p><span><span class="Apple-tab-span"> </span>•<span class="Apple-tab-span"> </span>•<span class="Apple-tab-span"> </span></span><span><b>補足點</b></span><span>：即使你們沒有寫出自動轉檔程式，可以展示</span> URDF <span>的代碼結構，說明</span> Parent Link <span>與</span> Child Link<span>如何透過</span> Joint <span>連接，以及</span> &lt;inertial&gt; <span>標籤如何定義質量矩陣</span> (Inertia Matrix)<span>，這證明你們理解模擬背後的數據結構。</span></p>
+<p><span> </span></p><h3>W17_260102</h3>
 <p><span>工作分配</span></p>
 <p><span>王瑞億：組織架構建置及引導。</span></p>
 <p><span>鄭宇哲、蕭日政、<span>熊有為：負責提供確切圖片與檔案。</span></span></p>
