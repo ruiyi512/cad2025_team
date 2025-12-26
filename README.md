@@ -13,6 +13,10 @@ github classroom 倉儲:https://github.com/mdecad2025/2a-ag3
 
 41323107個人倉儲:https://github.com/ruiyi512/feature-ruiyi512
 
+41323142個人網站:[https://ruiyi512.github.io/feature-ruiyi512/](https://friendly-giggle-r4p4rxvwprr6f54wj-8081.app.github.dev/content/index.html)
+
+41323142個人倉儲:[https://github.com/ruiyi512/feature-ruiyi512](https://github.com/SKYang41323142/cad2025_team_sky/edit/feature/SKYang41323142/README.md)
+
 
 利用 init_replit 指令取下子模組並安裝所需 Python 模組
 
